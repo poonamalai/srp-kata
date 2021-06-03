@@ -15,7 +15,7 @@ public class JTestVehicle {
 		assertEquals(100, w_vehicle.getMaxFuel());
 	}
   
-  @Test
+  	@Test
 	public void testgetRemainingFuel() {
 		
 		Vehicle w_vehicle = new Vehicle(100);
@@ -23,13 +23,12 @@ public class JTestVehicle {
 		assertEquals(100, w_vehicle.getRemainingFuel());	
 	}
   
-  @Test
+  	@Test
 	public void testSetRemainingFuel() {
 		
 		Vehicle w_vehicle = new Vehicle(100);
-    VehicleFuel w_vehicleFuel = new VehicleFuel();
-		
-    w_vehicleFuel.setRemainingFuel(w_Vehicle, 40);
+    		
+   		w_vehicle.setRemainingFuel(40);
     
 		assertEquals(40, w_vehicle.getRemainingFuel());	
 	}
@@ -38,11 +37,10 @@ public class JTestVehicle {
 	public void testSetReFuel() {
 		
 		Vehicle w_vehicle = new Vehicle(100);
-    VehicleFuel w_vehicleFuel = new VehicleFuel();
-		
-    w_vehicleFuel.setRemainingFuel(w_Vehicle, 40);
+		w_vehicle.setRemainingFuel(40);
     
-    w_vehicleFuel.setReFuel(w_Vehicle);
+    		VehicleFuel w_vehicleFuel = new VehicleFuel();
+		w_vehicleFuel.setReFuel(w_Vehicle);
     
 		assertEquals(100, w_vehicle.getRemainingFuel());	
 	}
@@ -51,11 +49,11 @@ public class JTestVehicle {
 	public void testAccelerate() {
 		
 		Vehicle w_vehicle = new Vehicle(100);
-    VehicleAction w_vehicleAction = new VehicleAction(100);
+    		VehicleAction w_vehicleAction = new VehicleAction(100);
     
-    w_vehicleAction.accelerate(w_vehicle);
+    		w_vehicleAction.accelerate(w_vehicle);
     
-    assertEquals(99, w_vehicle.getRemainingFuel());	
+    		assertEquals(99, w_vehicle.getRemainingFuel());	
 	}
   
   	
