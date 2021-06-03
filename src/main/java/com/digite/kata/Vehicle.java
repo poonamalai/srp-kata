@@ -18,16 +18,16 @@ public class Vehicle {
     public int getRemainingFuel() {
         return remainingFuel;
     }
+    
+    public void setRemainingFuel(Vehicle vehicle, final int remainingFuel) {
+        vehicle.remainingFuel = remainingFuel;
+    }
 }
 
 public class VehicleFuel {
 
     public void reFuel(Vehicle vehicle){
         vehicle.remainingFuel = vehicle.maxFuel;
-    }
-    
-    public void setRemainingFuel(Vehicle vehicle, final int remainingFuel) {
-        vehicle.remainingFuel = remainingFuel;
     }
 }
 
